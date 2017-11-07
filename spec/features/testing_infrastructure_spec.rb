@@ -1,6 +1,14 @@
 describe 'Battle', :type => :feature do
-  it 'shows infrastructure is working' do
+  # it 'shows infrastructure is working' do
+  #   visit '/'
+  #   expect(page).to have_content "Testing infrastructure working!"
+  # end
+
+  it 'takes names and shows them on screen' do
     visit '/'
-    expect(page).to have_content "Testing infrastructure working!"
+    fill_in('player1', with: 'Allan')
+    fill_in('player2', with: 'Dania')
+    click_on('Fight')
+    expect(page).to have_content "Allan vs Dania"
   end
 end
