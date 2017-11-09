@@ -5,6 +5,7 @@ require './lib/game'
 class Battle < Sinatra::Base
 
   enable :sessions
+  attr_reader :player1 , :player2
 
   get '/' do
     erb(:index)
@@ -16,27 +17,29 @@ class Battle < Sinatra::Base
   end
 
   get '/play' do
-    @player1 = $player1.name
-    @player2 = $player2.name
-    @player1hp = $player1.hit_points
-    @player2hp = $player2.hit_points
+    player_name 
+    @player1hp = $game.hit_points(player1)
+    @player2hp = $game.hit_points(player2)
     erb(:play)
   end
 
 get '/AttackP2' do
-    @player1 = $player1.name
-    @player2 = $player2.name
-
-    $game.attack($player2)
-    @player1hp = $player1.hit_points
-    @player2hp = $player2.hit_points
+    player_name
+    $game.attack(player2)
+    @player1hp = $game.hit_points(player1)
+    @player2hp = $game.hit_points(player2)
     erb(:attack)
   end
 
-post '/Attack' do
+  def player_name
+    @player1 = $game.player1
+    @player2 = $game.player2
+    @player1_name = @player1.name
+    @player2_name = @player2.name
+  end
 
-    @player2.reduce_hit_points
-    # p $player2.hit_points
+post '/Attack' do
+    $game.attack(player2)
 end
 
   run! if app_file == $0
