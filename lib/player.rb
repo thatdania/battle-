@@ -11,5 +11,8 @@ class Player
     @hit_points -= 10
   end
 
+  def hit_points
+    @hit_points 
+  end
 
 end
