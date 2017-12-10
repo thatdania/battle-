@@ -1,8 +1,13 @@
-# battle-
+# battlegame
 
-
+This project is a work in progress of learning how to build a battle game. We learnt how to set up a controller, what elements were 
+required and how to load our game onto the browser. 
 
 # Domain Model
+
+A strategy to approaching the problems of the challenge was to list out all the user stories that represented requirements for
+the website in order for it to accomplish the challenge. My pair partner and I came up with this model before touching any code
+in order to know what requirements neede to be met  
 
 | Objects       | Messages      | Output                      |
 | ------------- |:-------------:| ---------------------------:|
