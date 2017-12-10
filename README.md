@@ -1,4 +1,4 @@
-# battlegame
+# battlegame 🕹🕹
 
 This project is a work in progress of learning how to build a battle game. We learnt how to set up a controller, what elements were 
 required and how to load our game onto the browser. 
