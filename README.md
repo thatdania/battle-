@@ -1,4 +1,4 @@
-# Battlegame 🕹🕹
+# Battle2 🕹🕹
 
 This project was about building a battling game in pairs throughout the week using Ruby.
 We learnt how to connect different elements such as players, scores and attacks in diferrent
