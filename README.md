@@ -1,13 +1,15 @@
-# battlegame 🕹🕹
+# Battlegame 🕹🕹
 
-This project is a work in progress of learning how to build a battle game. We learnt how to set up a controller, what elements were 
-required and how to load our game onto the browser. 
+This project was about building a battling game in pairs throughout the week using Ruby.
+We learnt how to connect different elements such as players, scores and attacks in diferrent
+routes of the controller. Given we did this in pairs, this was a work in progress project as
+we jumped between people's projects across the week depending on thier progress. 
 
-# Domain Model
+# Domain Model (User stories that we wanted to cover) 
 
 A strategy to approaching the problems of the challenge was to list out all the user stories that represented requirements for
 the website in order for it to accomplish the challenge. My pair partner and I came up with this model before touching any code
-in order to know what requirements neede to be met  
+in order to know what requirements neede to be met.  
 
 | Objects       | Messages      | Output                      |
 | ------------- |:-------------:| ---------------------------:|
@@ -21,6 +23,8 @@ in order to know what requirements neede to be met
 | attack(HP)    | reduce        | P1 Hp reduces by 10         |
 | message(0hp)  | lose          | P1 loses a game of battle   |
 
+
+# Domain Model (Other Userstories we wanted to acheive but didn't) 
 
 | Objects          | Messages      | Output                                   |
 | ---------------- |:-------------:| ----------------------------------------:|
